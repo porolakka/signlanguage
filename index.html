@@ -17,11 +17,13 @@
 </head>
 <body>
   <div id="ytmov"></div>
-  Wrap old and new getUserMedia<br />
-  <button type="button" onclick="startVideo();">Start</button>
-  <button type="button" onclick="stopVideo();">Stop</button>
-  <br />
-  <video id="local_video" autoplay style="width: 320px; height: 240px; border: 1px solid black;margin-top:5em;margin-right:5em;float:right;"></video>
+  <div style="position:relative;z-index:0;">
+   Wrap old and new getUserMedia<br />
+   <button type="button" onclick="startVideo();">Start</button>
+   <button type="button" onclick="stopVideo();">Stop</button>
+   <br />
+   <video id="local_video" autoplay style="width: 320px; height: 240px; border: 1px solid black;margin-top:5em;margin-right:5em;float:right;"></video>
+ </div>
 </body>
 <script type="text/javascript">
   var localVideo = document.getElementById('local_video');
