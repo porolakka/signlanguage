@@ -4,19 +4,19 @@
  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
  <title>Wrap old and new getUserMedia</title>
  <link href="css/main.css" rel="stylesheet" type="text/css" />
- <script src="js/jquery-3.1.1.min.js"></script>
+ <script type="text/javascript" charset="utf-8" src="js/jquery-3.1.1.min.js"></script>
  <script type="text/javascript" charset="utf-8" src="js/jquery.tubular.1.0.js"></script>
  <script>
   $(function(){
     $('document').ready(function() {
         var options = { videoId: 'U28ZrUhd4ng'};
-        $('#window').tubular(options);
+        $('#ytmov').tubular(options);
     });
   });
  </script>
 </head>
 <body>
-  <div id="window"></div>
+  <div id="ytmov"></div>
   Wrap old and new getUserMedia<br />
   <button type="button" onclick="startVideo();">Start</button>
   <button type="button" onclick="stopVideo();">Stop</button>
