@@ -9,7 +9,7 @@
  <script>
   $(function(){
     $('document').ready(function() {
-        var options = { videoId: 'U28ZrUhd4ng'};
+        var options = { videoId: 'U28ZrUhd4ng', mute: false};
         $('#ytmov').tubular(options);
     });
   });
@@ -19,8 +19,12 @@
   <div id="ytmov"></div>
   <div style="position:relative;z-index:99;">
    Wrap old and new getUserMedia<br />
-   <button type="button" onclick="startVideo();">Start</button>
-   <button type="button" onclick="stopVideo();">Stop</button>
+   <button type="button" onclick="startVideo();">Camera ON</button>
+   <button type="button" onclick="stopVideo();">Camera OFF</button>
+   <button type="button" class="tubular-play">Video Play</button>
+   <button type="button" class="tubular-pause">Video Pause</button>
+   <button type="button" class="tubular-volume-up">Volume Up</button>
+   <button type="button" class="tubular-volume-down">Video Down</button>
    <br />
    <video id="local_video" autoplay style="width: 320px; height: 240px; border: 1px solid black;margin-top:5em;margin-right:5em;float:right;"></video>
  </div>
